@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+<package name="endo.math.project" extends="struts-default">
+
+<action name="MathAction" class="endo.math.project.EndoMathAction" method="execute">
+<result name="OK">answer.jsp</result>
+
+</action>
+
+<action name="ConfirmAction" class="endo.math.project.EndoMathAction" method="confirm">
+</action>
+
+
+</package>
+</struts>
